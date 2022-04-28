@@ -1,27 +1,18 @@
-# include<stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n;
+    int n, i,j,t;
     scanf("%d",&n);
-    int a[n][n],i,j,x;
-    for(i=0;i<n;i++)
+    t=n;
+    while(t!=0)
     {
-        for(j=0;j<n;j++)
+    for(i=n;i>=1;i--)
         {
-            if(i==j)
-            a[i][j]='0';
-            else
-            a[i][j]='x';
-        }
-    }
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            printf("%c",a[i][j]);
+            printf("%d ",i);
         }
         printf("
 ");
+        t--;
     }
     return 0;
 }
