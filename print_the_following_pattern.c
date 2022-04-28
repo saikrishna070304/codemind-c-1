@@ -6,10 +6,12 @@ int main()
     t=n;
     while(t!=0)
     {
-    for(i=n;i>=1;i--)
+    for(i=1;i<=n-2;i++)
         {
-            printf("%d ",i);
+            printf("%d",i);
         }
+        for(j=1;j<=n-3;j++)
+        printf("%d",j);
         printf("
 ");
         t--;
